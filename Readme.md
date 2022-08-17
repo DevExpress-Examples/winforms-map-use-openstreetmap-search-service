@@ -6,7 +6,7 @@
 
 # Map for WinForms - Use the OpenStreetMap Search Service
 
-This example demonstrates how to add an image layer with map tiles from the OpenStreetMap service and an information layer that searches for a place on the map with the means of the OpenStreetMap search service.
+This example demonstrates how to add an image layer with map tiles from the OpenStreetMap service, and an information layer uses the OpenStreetMap search service to locate a place on the map.
 
 ![resulting map](Images/resulting-map.png)
 
@@ -17,7 +17,7 @@ The example uses the following classes:
 
     > **IMPORTANT:** Before you use OpenStreetMap tiles in your app, read the following articles: [Copyright and License](https://www.openstreetmap.org/copyright) and [Tile Usage Policy](https://operations.osmfoundation.org/policies/tiles). 
 
-* [`InformationLayer`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.InformationLayer) - A layer that displays additional geo information above the map.
+* [`InformationLayer`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.InformationLayer) - A layer that displays additional geo information over the map.
 * [`OsmSearchDataProvider`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.OsmSearchDataProvider) - Allows you to use the OpenStreetMap search service.
 
 ## Files to Look At
