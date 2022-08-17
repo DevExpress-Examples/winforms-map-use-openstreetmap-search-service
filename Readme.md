@@ -29,3 +29,8 @@ The example uses the following classes:
 * [Search](https://docs.devexpress.com/WindowsForms/16711/controls-and-libraries/map-control/gis-data/search?p=netframework)
 * [GIS Data](https://docs.devexpress.com/WindowsForms/17858/controls-and-libraries/map-control/gis-data)
 * [Image Tile Providers](https://docs.devexpress.com/WindowsForms/115774/controls-and-libraries/map-control/map-image-data/image-tile-providers)
+
+## More Examples
+
+* [Map for WinForms - Connect to the OpenStreetMap Service](https://github.com/DevExpress-Examples/winforms-map-connect-to-openstreetmap)
+* [How to: Use the OpenStreetMap Geocode Service Via the Map Control](https://github.com/DevExpress-Examples/how-to-use-the-openstreetmap-geocode-service-via-the-map-control-t629683)
