@@ -8,19 +8,27 @@ namespace OsmSearchSample {
             InitializeComponent();
         }
 
-        #region #LayersSpecifying
         private void OnFormLoad(object sender, EventArgs e) {
-            mapControl.Layers.AddRange(new LayerBase[] {
-                new ImageLayer {
-                    DataProvider = new OpenStreetMapDataProvider {
-                        TileUriTemplate = "YOUR_WEB_SERVICE.com/{1}/{2}/{3}"
-                    }
-                },
-                new InformationLayer {
-                    DataProvider = new OsmSearchDataProvider { }
-                }
-            });
+
+            ImageLayer imageLayer = new ImageLayer();
+            OpenStreetMapDataProvider dataProvider = new OpenStreetMapDataProvider();
+            dataProvider.TileUriTemplate = "https://{0}.tile.openstreetmap.org/{1}/{2}/{3}.png";
+            imageLayer.DataProvider = dataProvider;
+            dataProvider.WebRequest += DataProvider_WebRequest;
+
+            InformationLayer infoLayer = new InformationLayer();
+            OsmSearchDataProvider osmSearchDataProvider = new OsmSearchDataProvider();
+            osmSearchDataProvider.ResultsCount = 5;
+            infoLayer.DataProvider = osmSearchDataProvider;
+
+            mapControl.SearchPanelOptions.Width = 400;
+
+            mapControl.Layers.AddRange(new LayerBase[] { imageLayer, infoLayer });
         }
-        #endregion #LayersSpecifying
+
+        private void DataProvider_WebRequest(object sender, MapWebRequestEventArgs e) {
+            e.UserAgent = "Sample app with OSM tiles and search";
+            e.Referer = "https://www.mycompanysite.com/";
+        }
     }
 }

@@ -3,13 +3,29 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T629598)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# How to: Use the OpenStreetMap Search Service Via the Map Control
 
+# Map for WinForms - Use the OpenStreetMap Search Service
 
-<p>This example demonstrates how to add an image layer displaying map tiles from the OSM service and an information layer that searches for a place on the map using the OSM search service.</p>
-<p>The example uses the following classes:</p>
-<p>- <a href="https://documentation.devexpress.com/WindowsForms/DevExpress.XtraMap.ImageLayer.class">ImageLayer</a> - A layer that displays map images obtained from map image data providers.<br>- <a href="https://documentation.devexpress.com/WindowsForms/DevExpress.XtraMap.OpenStreetMapDataProvider.class">OpenStreetMapDataProvider</a> - The provider that loads map images from a web resource that provides data in the <strong>OpenStreetMap</strong> format.<br>- <a href="https://documentation.devexpress.com/WindowsForms/DevExpress.XtraMap.InformationLayer.class">InformationLayer</a> - A layer that displays additional geo information above the map.<br>- <a href="https://documentation.devexpress.com/WindowsForms/DevExpress.XtraMap.OsmSearchDataProvider.class">OsmSearchDataProvider</a> - Provides search using the Open Street Map service.</p>
+This example demonstrates how to add an image layer with map tiles from the OpenStreetMap service and an information layer that searches for a place on the map with the means of the OpenStreetMap search service.
 
-<br/>
+![resulting map](Images/resulting-map.png)
 
+The example uses the following classes:
 
+* [`ImageLayer`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ImageLayer) - A layer that displays map images obtained from map image data providers.
+* [`OpenStreetMapDataProvider`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.OpenStreetMapDataProvider) - A provider that loads map images in the OpenStreetMap format from a web resource.
+
+    > **IMPORTANT:** Before you use OpenStreetMap tiles in your app, read the following articles: [Copyright and License](https://www.openstreetmap.org/copyright) and [Tile Usage Policy](https://operations.osmfoundation.org/policies/tiles). 
+
+* [`InformationLayer`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.InformationLayer) - A layer that displays additional geo information above the map.
+* [`OsmSearchDataProvider`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.OsmSearchDataProvider) - Allows you to use the OpenStreetMap search service.
+
+## Files to Look At
+
+* [MainForm.cs](./CS/OsmSearchSample/MainForm.cs) (VB: [MainForm.vb](./VB/OsmSearchSample/MainForm.vb))
+
+## Documentation
+
+* [Search](https://docs.devexpress.com/WindowsForms/16711/controls-and-libraries/map-control/gis-data/search?p=netframework)
+* [GIS Data](https://docs.devexpress.com/WindowsForms/17858/controls-and-libraries/map-control/gis-data)
+* [Image Tile Providers](https://docs.devexpress.com/WindowsForms/115774/controls-and-libraries/map-control/map-image-data/image-tile-providers)
