@@ -20,7 +20,7 @@ The example uses the following classes:
 * [`InformationLayer`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.InformationLayer) - A layer that displays additional geo information over the map.
 * [`OsmSearchDataProvider`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.OsmSearchDataProvider) - Allows you to use the OpenStreetMap search service.
 
-## Files to Look At
+## Files to Review
 
 * [MainForm.cs](./CS/OsmSearchSample/MainForm.cs) (VB: [MainForm.vb](./VB/OsmSearchSample/MainForm.vb))
 
